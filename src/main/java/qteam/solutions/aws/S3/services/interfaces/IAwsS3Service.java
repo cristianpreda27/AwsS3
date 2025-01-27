@@ -7,9 +7,9 @@ import java.io.File;
 
 public interface IAwsS3Service {
 
-    public ListResult<Resource> listFolder(Resource parent, String cursor);
+    ListResult<Resource> listFolder(Resource parent, String cursor);
 
-    public Resource getResource(String id);
+    Resource getResource(String id);
 
-    public File getAsFile(Resource resource);
+    File getAsFile(Resource resource);
 }
